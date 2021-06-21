@@ -1,0 +1,110 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Elemento base*/
+
+body {
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif, Times, serif;
+    color: white;
+}
+
+header .container{
+    display:flex; /* alinha os elementos em tela */
+    flex-direction: row;    /* joga todos os elementos para linha. Propiedade default */
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* Filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)100%), url("/img/fundo\ de\ capa.jpg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 1% ;
+}
+
+.titulo{
+    font-size: 40px;
+    margin-top: 15%;
+
+}
+
+.botao{
+    background-color: rgb(0,0,0,0.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px; /* 1. cima e baixo 2. dir e esq*//* se passar 4 valores = cima, dir, baixo e esq*/
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+    transition: .2s ease all;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 15px;
+
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.sub{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    
+}
